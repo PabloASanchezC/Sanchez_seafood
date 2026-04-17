@@ -94,7 +94,7 @@ async function cargarInventario() {
     btn.disabled = true;
 
     try {
-        const response = await fetch(`${API_URL}?sheet=Productos`);
+        const response = await fetch(`${API_URL}?sheet=Inventario_Productos`);
         const data = await response.json();
         
         data.forEach(item => {
