@@ -4,23 +4,32 @@
 }
 
 :root {
-    --sanchez-purple: #4a148c; /* Morado profundo del logo */
-    --sanchez-gold: #c1a677;   /* Dorado de los laureles y detalles */
-    --sanchez-green: #2e8b57;  /* Verde de las hojas laterales */
-    --sanchez-light-bg: #fdfaf5; /* Crema suave para fondo */
-    --sanchez-text: #2d2d2d;
+  /* Azul Principal (Círculos y listón) */
+  --primary-blue: #1d3d8f;
+  
+  /* Azul Claro/Cian (Texto "SANCHEz" y "frozen sea food") */
+  --secondary-cyan: #34b7eb;
+  
+  /* Naranja Vibrante (Borde dentado) */
+  --accent-orange: #f39200;
+  
+  /* Fondo / Blanco (Cuerpo del camarón y fondo) */
+  --bg-white: #ffffff;
+  
+  /* Color de Texto (Un tono más oscuro del azul principal para legibilidad) */
+  --text-main: #152a63;
 }
 
 body {
-    background-color: var(--sanchez-light-bg);
+    background-color: var(--bg-white);
     font-family: 'Poppins', Arial, sans-serif;
-    color: var(--sanchez-text);
+    color: var(--text-main);
 }
 
 /* Navegación */
 .navbar-sanchez {
-    background-color: var(--sanchez-purple) !important;
-    border-bottom: 4px solid var(--sanchez-gold);
+    background-color: var(--primary-blue) !important;
+    border-bottom: 4px solid var(--secondary-cyan);
 }
 
 .sanchez-logo-header {
@@ -28,7 +37,7 @@ body {
     width: 120px; /* Aseguramos que el ancho sea igual al alto */
     aspect-ratio: 1 / 1; /* Garantiza que siempre sea un cuadrado */
     object-fit: cover; /* Centra la imagen dentro del círculo sin deformarla */
-    border: 2px solid var(--sanchez-gold);
+    border: 2px solid var(--secondary-cyan);
     border-radius: 50%;
     background-color: white;
     display: block; /* Evita espacios extra debajo de la imagen */
@@ -36,7 +45,7 @@ body {
 }
 
 .text-gold {
-    color: var(--sanchez-gold) !important;
+    color: var(--secondary-cyan) !important;
     font-size: 14px;
     font-weight: 500;
 }
@@ -47,14 +56,14 @@ body {
 
 /* Tarjetas */
 .card-header-sanchez {
-    background-color: var(--sanchez-purple) !important;
-    color: var(--sanchez-gold) !important;
+    background-color: var(--primary-blue) !important;
+    color: var(--secondary-cyan) !important;
     font-weight: bold;
 }
 
 /* Botones */
 .btn-sanchez-save {
-    background-color: var(--sanchez-green);
+    background-color: var(--accent-orange);
     color: white;
     font-weight: bold;
     border: 1px solid rgba(0,0,0,0.1);
@@ -62,24 +71,24 @@ body {
 
 .btn-sanchez-save:hover {
     background-color: #246d45;
-    color: var(--sanchez-gold);
+    color: var(--secondary-cyan);
 }
 
 .btn-sanchez-update {
-    background-color: var(--sanchez-gold);
-    color: var(--sanchez-purple);
+    background-color: var(--secondary-cyan);
+    color: var(--primary-blue);
     font-weight: bold;
 }
 
 /* Tablas */
 .table-sanchez thead th {
     background-color: #f2eef7;
-    color: var(--sanchez-purple);
-    border-bottom: 2px solid var(--sanchez-gold);
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--secondary-cyan);
     text-transform: uppercase;
     font-size: 0.85rem;
 }
 
 .text-sanchez {
-    color: var(--sanchez-purple);
+    color: var(--primary-blue);
 }
