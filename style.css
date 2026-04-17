@@ -1,0 +1,85 @@
+/* Configuración Global */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --sanchez-purple: #4a148c; /* Morado profundo del logo */
+    --sanchez-gold: #c1a677;   /* Dorado de los laureles y detalles */
+    --sanchez-green: #2e8b57;  /* Verde de las hojas laterales */
+    --sanchez-light-bg: #fdfaf5; /* Crema suave para fondo */
+    --sanchez-text: #2d2d2d;
+}
+
+body {
+    background-color: var(--sanchez-light-bg);
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--sanchez-text);
+}
+
+/* Navegación */
+.navbar-sanchez {
+    background-color: var(--sanchez-purple) !important;
+    border-bottom: 4px solid var(--sanchez-gold);
+}
+
+.sanchez-logo-header {
+    height: 120px;
+    width: 120px; /* Aseguramos que el ancho sea igual al alto */
+    aspect-ratio: 1 / 1; /* Garantiza que siempre sea un cuadrado */
+    object-fit: cover; /* Centra la imagen dentro del círculo sin deformarla */
+    border: 2px solid var(--sanchez-gold);
+    border-radius: 50%;
+    background-color: white;
+    display: block; /* Evita espacios extra debajo de la imagen */
+    padding: 2px; /* Añade espacio entre el logo y el borde dorado */
+}
+
+.text-gold {
+    color: var(--sanchez-gold) !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.row {
+    letter-spacing: 10%;
+}
+
+/* Tarjetas */
+.card-header-sanchez {
+    background-color: var(--sanchez-purple) !important;
+    color: var(--sanchez-gold) !important;
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-sanchez-save {
+    background-color: var(--sanchez-green);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.btn-sanchez-save:hover {
+    background-color: #246d45;
+    color: var(--sanchez-gold);
+}
+
+.btn-sanchez-update {
+    background-color: var(--sanchez-gold);
+    color: var(--sanchez-purple);
+    font-weight: bold;
+}
+
+/* Tablas */
+.table-sanchez thead th {
+    background-color: #f2eef7;
+    color: var(--sanchez-purple);
+    border-bottom: 2px solid var(--sanchez-gold);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.text-sanchez {
+    color: var(--sanchez-purple);
+}
