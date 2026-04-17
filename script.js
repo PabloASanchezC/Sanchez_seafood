@@ -46,8 +46,8 @@ async function cargarCatalogoSucursales() {
         sucursales.forEach(d => {
             let opt = document.createElement('option');
             // Usamos el nombre de la columna definida en Sheets
-            opt.value = d.Nombre_Departamento; 
-            opt.text = d.Nombre_Departamento;
+            opt.value = d.Nombre_Sucursal; 
+            opt.text = d.Nombre_Sucursal;
             select.add(opt);
         });
     } catch (error) {
@@ -106,7 +106,7 @@ async function cargarInventario() {
                         ${item.Stock}
                     </span>
                 </td>
-                <td><span class="text-muted" style="font-size: 0.9rem;">${item.Departamento}</span></td>
+                <td><span class="text-muted" style="font-size: 0.9rem;">${item.ultima_sucursal}</span></td>
             </tr>`;
             tabla.innerHTML += row;
         });
